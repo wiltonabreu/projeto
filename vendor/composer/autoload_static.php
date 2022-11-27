@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit6fab3173d269ff50e802e637788b505a
 {
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Wap\\' => 4,
+        ),
         'P' => 
         array (
             'PHPMailer\\PHPMailer\\' => 20,
@@ -14,14 +18,14 @@ class ComposerStaticInit6fab3173d269ff50e802e637788b505a
     );
 
     public static $prefixDirsPsr4 = array (
+        'Wap\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wap/php-classes/src',
+        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/wap/php-classes/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -50,7 +54,6 @@ class ComposerStaticInit6fab3173d269ff50e802e637788b505a
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit6fab3173d269ff50e802e637788b505a::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit6fab3173d269ff50e802e637788b505a::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit6fab3173d269ff50e802e637788b505a::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit6fab3173d269ff50e802e637788b505a::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit6fab3173d269ff50e802e637788b505a::$classMap;
 

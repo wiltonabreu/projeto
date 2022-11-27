@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\wap\\php-classes\\src"
+            "Wap\\": "vendor\\wap\\php-classes\\src"
         }
     }
 }
