@@ -35,6 +35,7 @@ class User extends Model {
 
 			$_SESSION[User::SESSION] = $user->getValues();
 
+			
 			return $user;
 
 		} else {
